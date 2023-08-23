@@ -1,0 +1,248 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --supportcolor: #000;
+    --supportlistletter:  #fff;
+    --supportoptions: #d3d3d3;
+    --colorfooter: #808080;
+    --colorcontainer: #f5f5f5;
+    --colortable: #ccc;
+}
+
+.support{
+    width: 100%;
+    height: 50px;
+    background-color: var(--suportcolor);
+    display: flex;
+    justify-content: space-around;
+}
+.support h3{
+    color: var(--supportlistletter);
+    margin: 0.5em 0;
+}
+header .support ul{
+    margin: 0.5em 0;
+}
+header .support ul li{
+    display: inline-block;
+    margin-left: 1.5em;
+    text-decoration: none;
+    color: var(--supportlistletter)
+}
+header .support ul li a{
+    color: var(--supportlistletter)
+}
+header .container{
+    width: 100%;
+    height: 120px;
+    background-color: var(--supportlistletter);
+    display: flex;
+    justify-content: space-between;
+}
+header .container .title{
+    display: flex;
+}
+header .container .title input{
+    margin: 3em 0 ;
+    width: 25em;
+    border-radius: 10px;
+}
+header .container .title h1{
+    margin: 0.8em 0.5em;
+}
+header .container .title h1::first-letter{
+    font-size: 48px;
+}
+header .container .user{
+    display: flex;
+    margin: 2.5em;
+}
+header .container .user p{
+    font-size: 24px;
+    margin: 0 0.5em;
+}
+
+header .options{
+    width: 100%;
+    height: 80px;
+    background-color: var(--supportoptions);
+}
+.lista-flex {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o espaçamento padrão */
+    display: flex; /* Aplica o flexbox */
+    justify-content: space-around; /* Espaçamento uniforme entre os itens */
+  }
+  .lista-flex a:hover {
+    color: var(--supportlistletter);
+  }
+  
+  .lista-flex li {
+    padding: 2em 0;
+    text-align: center; /* Centraliza o texto horizontalmente */
+  }
+  .lista-flex a {
+    text-decoration: none;
+  }
+
+main .anc{
+    width: 100%;
+    height: 500px;
+    background: url(/img/banner.jpg);
+}
+main .anc .txt{
+    width: 43.5%;
+    height: 100%; 
+}
+main .anc .txt p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6em;
+    color: var(--supportlistletter);
+}
+
+section .ios-opt{
+    width: 100%;
+    height: 300px;
+    margin: 5em 0;
+    display: flex;
+
+}
+section .ios-opt .item{
+    width: 33.3%;
+    display: flex;
+    justify-content: space-evenly;
+    /* height: 100%; */
+}
+section .ios-opt .item h3{
+    position: relative;
+    right: 200px;
+    top: 325px;
+}
+#cellglx{
+    position: relative;
+    right: 300px;
+    top: 325px;
+}
+
+section .bnf{
+    width: 100%;
+    height: 600px;
+    background: url(/img/banner_s.jpg) no-repeat;
+    background-size: 100%;
+}
+section .bnf .rima{
+    width: 40%;
+    height: 100%;
+    /* background-color: lime; */
+}
+section .bnf p{
+    color: var(--supportlistletter);
+    padding: 5em;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 300px;
+    background-color: var(--colorfooter);
+}
+footer h3{
+    padding: 1em 2em;
+    font-size: 28px;
+}
+footer ul{
+    margin: 1em 2.5em;
+    font-size: 24px;
+    font-weight: bold;
+}
+footer ul li{
+    list-style: none;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--colorcontainer);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer h2 {
+    margin-top: 0;
+  }
+  
+  .contact-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .contact-table td {
+    padding: 10px;
+    border: 1px solid var(--colortable);
+  }
+  
+  .contact-table td:first-child {
+    font-weight: bold;
+    background-color: #f0f0f0;
+  }
+
+@media screen and (max-width: 1500px) {
+    .bnf .rima p{
+        padding: 3em;
+    }
+}
+@media screen and (max-width: 1300px) {
+    main .anc .txt p{
+        padding: 5em 2em;
+    }
+}
+@media screen and (max-width: 1200px) {
+    body{
+        color:red;
+    }
+    .bnf .rima p{
+        padding: 2em;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .bnf .rima p{
+        padding: 1em ;
+    }
+    main .anc .txt p{
+        padding: 3em 2em;
+    }
+}
+@media screen and (max-width: 900px) {
+    main .anc .txt p{
+        padding: 2em 2em;
+    }
+}
+@media screen and (max-width: 850px) {
+    main .anc .txt p{
+        padding: 0 2em;
+    }
+}
+@media screen and (max-width: 800px) {
+    .bnf .rima p{
+        font-size: 24px;
+        padding: 4em 2em;
+    }
+    main .anc .txt p{
+        padding: 2em;
+        font-size: 16px;
+    }
+}
